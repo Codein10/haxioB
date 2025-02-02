@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import connectDB from './Db.js';
-import authRoutes from '../routes/Auth.js';
+import connectDB from './db.js';
+import authRoutes from './routes/Auth.js';
 import dotenv from 'dotenv';
-import getintouch from '../routes/GetInTouchRoute.js'
+import getintouch from './routes/GetInTouchRoute.js'
 dotenv.config();
 
 const app = express();
